@@ -44,3 +44,27 @@ switch (userType){
     }
 
 console.log("User Category:", userCategory);
+
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated": "Not authenticated";
+console.log("Authentication Status:", authenticationStatus);
+
+let dietCustomer = "Employee";
+let mssgAuthorization;
+switch (dietCustomer){
+    case "Employee":
+        mssgAuthorization = "Dietary Services"
+        console.log("You are allowed to:", mssgAuthorization)
+        break;
+    case "Enrolled Member":
+        mssgAuthorization = "Dietary Services and one-on-one interaction with a dietician";
+        console.log("You are allowed to:",mssgAuthorization);
+        break;
+    case "Subscriber":
+        mssgAuthorization = "partial access to Dietary Services";
+        console.log("You are allowed to:", mssgAuthorization);    
+        break;
+    default:
+        console.log("You need to entroll or at least subscribe first to avail this facility")
+        break;
+    }
