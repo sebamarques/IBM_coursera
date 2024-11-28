@@ -3,16 +3,33 @@
   <title>Rectangle Area Calculator</title>
 </head>
 <body>
-  <h1>Rectangle Area Calculator</h1>
-  <label for="length">Enter the length: </label>
-  <input type="number" id="length"><br><br>
-
-  <label for="width">Enter the width: </label>
-  <input type="number" id="width"><br><br>
-
-  <button onclick="calculateArea()">Calculate Area</button><br><br>
-
-  <p id="result"></p>
+  <div>
+      <h1>Rectangle Area Calculator</h1>
+      <label for="length">Enter the length: </label>
+      <input type="number" id="length"><br><br>
+    
+      <label for="width">Enter the width: </label>
+      <input type="number" id="width"><br><br>
+    
+      <button onclick="calculateArea()">Calculate Area</button><br><br>
+    
+      <p id="result"></p>
+  </div>
+  <div>
+    <h1>Calculate Grocery items</h1>
+      <label for="Grocery1">Enter Grocery 1 Amount: </label>
+      <input type="number" id="Grocery1"><br><br>
+      
+      <label for="Grocery2">Enter Grocery 2 Amount: </label>
+      <input type="number" id="Grocery2"><br><br>
+      
+      <label for="Grocery3">Enter Grocery 3 Amount: </label>
+      <input type="number" id="Grocery3"><br><br>
+    
+      <button onclick="groceryTracker()">The total amount is:</button><br><br>
+    
+      <p id="resultGrocery"></p>
+  </div>
 <script src="./calculate_Area.js"></script>
 </body>
 </html>
